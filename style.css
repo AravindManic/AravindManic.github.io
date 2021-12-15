@@ -174,7 +174,10 @@ section {
 
 .profileContainer {
   height: 100%;
-  background-color: #303030;
+  background: url(./Images/contactDesign.svg);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
@@ -394,8 +397,11 @@ section {
 }
 
 .black {
-  background-color: #303030;
   color: #fff;
+  background: url(./Images/contactDesign.svg);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .contactContainer {
@@ -411,7 +417,10 @@ section {
 
 .contactImage {
   width: 750px;
-  height: 100vh;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: url(./Images/contactDesign.svg);
   background-position: center;
   background-size: cover;
@@ -419,15 +428,15 @@ section {
 }
 
 .contactImage h3 {
-  /* font-family: "Great Vibes", cursive; */
+  font-family: "Great Vibes", cursive;
   color: #fff;
+  margin: 0 0 0 96px;
   font-weight: 500;
-  margin: 120px 0 0 96px;
-  font-size: 48px;
+  font-size: 72px;
   width: 400px;
   letter-spacing: 4px;
   line-height: 70px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .contactImage h4 {
@@ -508,12 +517,47 @@ section {
   transform: scale(1.02);
 }
 
-.socials div {
+.socials .phone {
   border-left: 2px solid #303030;
   padding: 4px 8px;
   margin-left: 4px;
   font-size: 12px;
   font-weight: 700;
+}
+
+.smcontainer {
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.copyright {
+  position: absolute;
+  right: 250px;
+  bottom: 20px;
+  color: #303030;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.copyright img {
+  filter: invert(11%) sepia(0%) saturate(2118%) hue-rotate(154deg)
+    brightness(109%) contrast(82%);
+  width: 50px;
+  margin: 0 8px;
+}
+
+.copyright h3 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.fulltitle {
+  display: none;
 }
 
 @media screen and (max-width: 500px) {
@@ -604,7 +648,10 @@ section {
   }
 
   .contactWrapper {
-    background: #303030;
+    background: url(./Images/contactDesign.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .contactFormContainer {
@@ -632,18 +679,71 @@ section {
     box-sizing: border-box;
   }
 
-  .socials i {
-    color: #fff;
+  .socials {
+    flex-direction: column;
   }
 
-  .socials img,
-  .socials div {
-    display: none;
+  .socials div i {
+    font-size: 16px;
+    color: #fff;
+    padding: 4px 10px;
+  }
+
+  .socials .phone {
+    color: #fff;
+    border-left: 2px solid #fff;
+  }
+
+  .socials div img {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(219deg)
+      brightness(105%) contrast(102%);
   }
 
   .button {
+    position: relative;
     border: none;
     background-color: #fff;
     color: #303030;
+    font-weight: 600;
+    border-radius: 10px;
+  }
+
+  .smcontainer {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+  }
+
+  .copyright {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    color: white;
+  }
+
+  .copyright img {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(219deg)
+      brightness(105%) contrast(102%);
+    width: 50px;
+    margin: 0 8px;
+  }
+
+  .copyright h3 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .expWrapper {
+    flex-direction: column;
+  }
+
+  .fulltitle {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: underline;
   }
 }
