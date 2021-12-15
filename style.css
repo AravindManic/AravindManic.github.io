@@ -174,7 +174,11 @@ section {
 
 .profileContainer {
   height: 100%;
-  background-color:#303030;
+  background: url(./Images/contactDesign.svg);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .profileWrapper {
@@ -734,6 +738,11 @@ section {
   }
   .expWrapper {
     flex-direction: column;
+  }
+
+  .expContainer {
+    height: fit-content;
+    overflow:scroll;
   }
 
   .fulltitle {
