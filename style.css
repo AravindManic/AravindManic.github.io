@@ -742,7 +742,7 @@ section {
 
   .expContainer {
     height: fit-content;
-    overflow:scroll;
+    overflow-y: visible;
   }
 
   .fulltitle {
