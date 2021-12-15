@@ -174,11 +174,7 @@ section {
 
 .profileContainer {
   height: 100%;
-  background: url(./Images/contactDesign.svg);
-  background-position: right;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: hidden;
+  background-color:#303030;
 }
 
 .profileWrapper {
