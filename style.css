@@ -515,3 +515,135 @@ section {
   font-size: 12px;
   font-weight: 700;
 }
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    padding: 24px;
+  }
+
+  .scroll {
+    padding: 24px;
+  }
+
+  .navLinks {
+    width: auto;
+  }
+
+  .header_italic {
+    font-size: 24px;
+  }
+
+  .header_regular {
+    font-size: 18px;
+  }
+
+  .profile_button {
+    margin: 12px auto;
+  }
+
+  .hi {
+    font-size: 28px;
+  }
+
+  .name {
+    text-align: center;
+    font-weight: 700;
+    padding: 8px 0;
+  }
+
+  .role {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .profileContainer {
+    overflow-y: scroll;
+  }
+
+  .roleContainer {
+    flex-wrap: wrap;
+    width: 85%;
+    height: fit-content;
+  }
+
+  .roleImage {
+    margin: 30px 16px;
+  }
+
+  .titleCont,
+  .expLine {
+    display: none;
+  }
+
+  .expInfo {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .expDetailsTitle,
+  .expDetails {
+    text-align: center;
+  }
+
+  .halfcolor {
+    background: #303030;
+    padding: 24px;
+    color: #fff;
+  }
+
+  .halfcolor a {
+    color: #fff;
+  }
+
+  .contactImage {
+    display: none;
+  }
+
+  .contactWrapper {
+    background: #303030;
+  }
+
+  .contactFormContainer {
+    width: 100%;
+    height: 91vh;
+  }
+
+  .contactForm input,
+  .contactForm textarea {
+    width: 300px;
+  }
+
+  .contactForm h4 {
+    color: #fff;
+    margin: 12px 0;
+  }
+
+  .contactForm h6 {
+    color: #fff;
+  }
+
+  .contactForm input,
+  .contactForm textarea {
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  .socials i {
+    color: #fff;
+  }
+
+  .socials img,
+  .socials div {
+    display: none;
+  }
+
+  .button {
+    border: none;
+    background-color: #fff;
+    color: #303030;
+  }
+}
